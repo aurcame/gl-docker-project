@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:18.04
 LABEL Author="Evgeniy Naryshkin" Description="Docker Homework - task 8.2"
 
 # install vim text editor, gcc compiler and make util. Clear cache
