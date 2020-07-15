@@ -1,0 +1,20 @@
+FROM ubuntu
+LABEL Author="Evgeniy Naryshkin" Description="Docker Homework - task 8.2"
+
+# install vim text editor, gcc compiler and make util. Clear cache
+RUN apt-get update && \
+    apt-get install -y vim \
+    build-essential \
+    make && \
+    gcc --version && \
+    rm -rf /var/lib/apt/lists/*
+
+# copy hello.c source file
+COPY ./hello.c .
+
+# compile hello.c
+RUN make hello && \
+    sha256sum ./hello #> sha256-hello-ubuntu
+
+# start hello
+CMD [ "./hello" ]

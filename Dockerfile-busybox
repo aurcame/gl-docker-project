@@ -1,0 +1,3 @@
+FROM busybox:uclibc
+LABEL Author="Evgeniy Naryshkin" Description="Docker Homework - task 5"
+CMD ["df", "-h", "/"]

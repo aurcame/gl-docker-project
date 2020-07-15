@@ -1,0 +1,11 @@
+FROM alpine:3.12
+LABEL Author="Evgeniy Naryshkin" Description="Docker Homework - task 4"
+
+# install python pygments for colour output
+RUN apk add --no-cache python3 \
+    py3-pip \
+    && pip3 install Pygments 
+
+#CMD ["cat", "/etc/passwd"]
+# colorize output with pygmentize util
+CMD ["pygmentize", "-g", "/etc/passwd"]

@@ -1,0 +1,5 @@
+FROM ubuntu:18.04
+LABEL Author="Evgeniy Naryshkin" Description="Docker Homework - task 2"
+# show sha256 checksum for lsb-release file
+CMD sha256sum  /etc/lsb-release
+

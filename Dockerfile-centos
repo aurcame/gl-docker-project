@@ -1,0 +1,3 @@
+FROM centos:8
+LABEL Author="Evgeniy Naryshkin" Description="Docker Homework - task 3"
+CMD [ "sha256sum", "/usr/bin/sha256sum" ]

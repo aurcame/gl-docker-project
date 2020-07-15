@@ -1,0 +1,2 @@
+FROM hello-world
+LABEL Author="Evgeniy Naryshkin" Description="Docker Homework - task 7"

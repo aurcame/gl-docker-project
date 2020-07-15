@@ -1,0 +1,11 @@
+FROM httpd:2.4
+LABEL Author="Evgeniy Naryshkin" Description="Docker Homework - task 7"
+EXPOSE 80
+
+# install ps util and clear cache
+RUN apt-get update
+#install -y procps \
+#    && rm -rf /var/lib/apt/lists/*
+
+# copy site to apache http directory
+ADD site.tar.gz /usr/local/apache2/htdocs/
