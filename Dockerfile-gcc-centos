@@ -1,4 +1,4 @@
-FROM centos
+FROM centos:8
 LABEL Author="Evgeniy Naryshkin" Description="Docker Homework - task 8.1"
 
 # install gcc compiler and make util. Clear cache
